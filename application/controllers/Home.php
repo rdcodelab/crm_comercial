@@ -9,7 +9,7 @@ class Home extends CI_Controller {
     
     public function index(){
                
-        if($this->session->userdata('usuarioLogado') == false){            
+        if($this->session->userdata('logged') == false){            
             $this->load->view('/template/login');
         }else{         
             $this->load->view('/template/header_html');
