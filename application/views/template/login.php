@@ -40,8 +40,29 @@
             <div class="panel-heading"> 
                 <h3 class="text-center"> Acesso ao <strong class="text-custom">CRM</strong> </h3>
             </div> 
-
-
+                <?php
+                    if($this->session->flashdata('sucesso')){
+                        echo '<div class="alert alert-success" style="margin: 20px">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>                                    
+                                    '.$this->session->flashdata('sucesso').'
+                                </div>';
+                    }
+                    if($this->session->flashdata('error')){
+                        echo '<div class="alert alert-danger" style="margin: 20px">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>                                    
+                                    '.$this->session->flashdata('error').'
+                                </div>';
+                        
+                    }                                                                             
+                ?>
+                    <a href="javascript:void()" onclick="erro_login()">teste</a>                      
+                <script type="type/javascript">
+                                        
+                    
+                    function erro_login(){
+                        $.Notification.autoHideNotify('error', 'top right', 'I will be closed in 5 seconds...','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae orci ut dolor scelerisque aliquam.');
+                    }
+                </script>                
             <div class="panel-body">
                 <form class="form-horizontal m-t-20" action="<?=base_url('account/login'); ?>" method="post">
                 

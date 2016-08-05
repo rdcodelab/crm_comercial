@@ -9,7 +9,13 @@
         <link rel="shortcut icon" href="<?=base_url('layout/assets/images/favicon_1.ico'); ?>">
 
         <title>CRM - RDCode</title>
+        
+        <!-- Modal css(Custom box) -->
+        <link href="<?=base_url('layout/assets/plugins/custombox/dist/custombox.min.css'); ?>" rel="stylesheet">
 
+        <!-- Sweet Alert -->
+        <link href="<?=base_url('layout/assets/plugins/sweetalert/dist/sweetalert.css'); ?>" rel="stylesheet" type="text/css">
+        
         <!--Form Wizard-->
         <link rel="stylesheet" type="text/css" href="<?=base_url('layout/assets/plugins/jquery.steps/demo/css/jquery.steps.css'); ?>" />
         

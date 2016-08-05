@@ -5,19 +5,14 @@
 
             <!-- Logo container-->
             <div class="logo">
-                <a href="index.html" class="logo"><span>Ub<i class="md md-album"></i>ld</span></a>
+                <a href="<?=base_url('/'); ?>" class="logo"><span>RDC<i class="md md-album"></i>DE</span></a>
             </div>
             <!-- End Logo container-->
 
             <div class="menu-extras">
 
     <ul class="nav navbar-nav navbar-right pull-right">
-        <li>
-            <form role="search" class="navbar-left app-search pull-left hidden-xs">
-                 <input type="text" placeholder="Search..." class="form-control">
-                 <a href=""><i class="fa fa-search"></i></a>
-            </form>
-        </li>
+        
         <li class="dropdown hidden-xs">
             <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
                 <i class="icon-bell"></i> <span class="badge badge-xs badge-danger">3</span>

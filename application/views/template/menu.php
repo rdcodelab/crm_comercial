@@ -40,9 +40,10 @@
                         <li class="has-submenu">
                             <a href="#"><i class="md md-devices"></i>Configurações</a>
                             <ul class="submenu">
-                                <li><a href="#">Usuários</a></li>
-                                <li><a href="#">Configuração Boleto</a></li>                                
-                                <li><a href="#">Módulos</a></li>                                
+                                <li><a href="<?=base_url('/configuracoes/empresa'); ?>">Empresa</a></li>
+                                <li><a href="<?=base_url('/usuarios'); ?>">Usuários</a></li>
+                                <li><a href="<?=base_url('/configuracoes/boleto'); ?>">Configuração Boleto</a></li>                                
+                                <li><a href="<?=base_url('/configuracoes/modulos'); ?>">Módulos</a></li>                                
                             </ul>
                         </li>
                     </ul>
